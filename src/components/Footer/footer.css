@@ -1,0 +1,52 @@
+.footer-content {
+  display: flex;
+  background-color: #dfe5ed;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  text-align: center;
+  color: #49647b;
+}
+
+@media (max-width: 865px) {
+  .footer-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-content .colz .colz-icon p {
+    font-size: 14px;
+  }
+  .footer-content .contact-email {
+    font-size: 14px;
+  }
+  .footer-content .all-rights {
+    font-size: 14px;
+  }
+}
+
+.colz .colz-icon {
+  display: flex;
+  align-items: center;
+}
+
+.colz .colz-icon p {
+  padding-right: 10px;
+}
+
+.colz .colz-icon .icons {
+  font-size: 24px;
+  transition: transform 0.2s;
+}
+@media (max-width: 767px) {
+  .colz .colz-icon .icons {
+    font-size: 20px;
+  }
+}
+.colz .colz-icon .icons:not(first-child) {
+  margin-right: 10px;
+}
+.icons:hover {
+  transform: scale(1.5);
+}

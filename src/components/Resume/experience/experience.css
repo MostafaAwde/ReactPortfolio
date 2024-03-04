@@ -1,0 +1,44 @@
+/* experience.css */
+.experience {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+@media (max-width: 767px) {
+  .experience {
+    padding: 0;
+  }
+}
+
+.experience .expContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  width: 100%;
+  flex-direction: column;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .experience .expContainer {
+    width: 70%;
+  }
+}
+
+@media (max-width: 767px) {
+  .experience .expContainer {
+    width: auto;
+  }
+}
+
+.experience .expContainer > div {
+  flex: 1;
+}
+
+.experience .expContainer .title {
+  color: #084a83; /* Color compatible with specified color */
+}
+
+.experience .expContainer .subtitle {
+  color: #555; /* Color compatible with specified color */
+}

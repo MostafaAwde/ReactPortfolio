@@ -1,0 +1,40 @@
+.goals {
+  padding-bottom: var(--main-padding-bottom);
+}
+.goals .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  justify-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.goals .container .card {
+  height: 180px;
+  width: 370px;
+}
+.goals .container .card h2 {
+  color: var(--main-color);
+  font-size: 20px;
+}
+.goals .container span svg {
+  color: #e0bf03;
+}
+@media (max-width: 767px) {
+  .goals {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .goals .container {
+    padding: 0;
+  }
+  .goals .container .card {
+    width: 300px;
+    height: 220px;
+  }
+  .goals .container .card .card-title {
+    font-size: 18px;
+  }
+}
